@@ -1,0 +1,17 @@
+[package]
+name = "websocket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.8.1", features = ["ws"] }
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.26.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tower = "0.5.2"
+reqwest = { version = "0.12.12", features = ["json"] }
+tracing-subscriber = "0.3.19"
+futures = "0.3"
+futures-util = "0.3.31"
+bytes = "1.9.0"
